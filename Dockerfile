@@ -1,5 +1,5 @@
-# Imagen base con Python y herramientas de compilación
-FROM python:3.9-slim
+# Imagen base con Python 3.10 y herramientas de compilación
+FROM python:3.10-slim
 
 # Instalar dependencias del sistema necesarias para face_recognition y dlib
 RUN apt-get update && apt-get install -y \
