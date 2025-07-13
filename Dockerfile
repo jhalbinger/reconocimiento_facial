@@ -1,6 +1,5 @@
-FROM python:3.10-slim
+FROM python:3.10
 
-# Instalar dependencias del sistema
 RUN apt-get update && apt-get install -y \
     build-essential \
     cmake \
@@ -9,6 +8,9 @@ RUN apt-get update && apt-get install -y \
     libx11-dev \
     libgtk-3-dev \
     libboost-all-dev \
+    libsm6 \
+    libxext6 \
+    libxrender-dev \
     git \
     python3-dev \
     && apt-get clean
