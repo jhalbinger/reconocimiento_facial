@@ -27,4 +27,4 @@ RUN pip install -r requirements.txt
 EXPOSE 5000
 
 # Comando para iniciar la app
-CMD ["python", "app.py"]
+CMD ["python", "reconocimiento_api.py"]
